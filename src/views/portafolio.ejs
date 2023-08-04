@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/portafolio.css">
+        <title><%- title%></title>
+</head>
+
+<body>
+    <%- include('partials/header.ejs')%>
+
+        <main>
+            <section id="sect-01">
+                <div class="left">
+                    <img src="proyectos.png" alt="">
+                </div>
+                <div class="right">
+                    <h1 class="fw-bold col-sm-8 mb-3 text-aling-center">Portafolio de proyectos</h1>
+                    <p class="col-sm-8">Nuestro portafolio de proyectos muestra nuestra experiencia y el impacto que
+                        hemos tenido en diversas industrias. Hemos trabajado con empresas de diferentes tamaños y
+                        sectores, brindándoles soluciones tecnológicas a medida que han mejorado su eficiencia operativa
+                        y su presencia en línea. Estos son algunos de nuestros proyectos destacados</p>
+                </div>
+            </section>
+
+            <section class="cards">
+                <div class="card bg-dark text-white p-2" style="width: 18rem;">
+                    <img src="img_proyectos/img01.png" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Proyecto Comercial</b></h5>
+                        <p class="card-text">Desarrollo de una plataforma de comercio electrónico escalable para una
+                            empresa minorista líder</p>
+                    </div>
+                    <ul class="list-group list-group-flush bg-dark text-white">
+                        <li class="list-group-item bg-dark text-white bg-dark text-white">Diseño UX/UI</li>
+                        <li class="list-group-item bg-dark text-white">Creatividad</li>
+                        <li class="list-group-item bg-dark text-white">Lógica</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link Page</a>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white p-2" style="width: 18rem;">
+                    <img src="img_proyectos/img02.png" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Aplicacion Movil</b></h5>
+                        <p class="card-text">Diseño y desarrollo de una aplicación móvil de reserva de citas para una
+                            clínica médica</p>
+                    </div>
+                    <ul class="list-group list-group-flush bg-dark text-white">
+                        <li class="list-group-item bg-dark text-white bg-dark text-white">Diseño UX/UI</li>
+                        <li class="list-group-item bg-dark text-white">Creatividad</li>
+                        <li class="list-group-item bg-dark text-white">Lógica</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link Page</a>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white p-2" style="width: 18rem;">
+                    <img src="img_proyectos/img03.png" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Inventario</b></h5>
+                        <p class="card-text">Implementación de un sistema de gestión de inventario personalizado.</p>
+                    </div>
+                    <ul class="list-group list-group-flush bg-dark text-white">
+                        <li class="list-group-item bg-dark text-white bg-dark text-white">Diseño UX/UI</li>
+                        <li class="list-group-item bg-dark text-white">Creatividad</li>
+                        <li class="list-group-item bg-dark text-white">Lógica</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link Page</a>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white p-2" style="width: 18rem;">
+                    <img src="img_proyectos/img04.png" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Web App</b></h5>
+                        <p class="card-text">Diseño y desarrollo de un sitio web interactivo para una agencia de
+                            marketing digital</p>
+                    </div>
+                    <ul class="list-group list-group-flush bg-dark text-white">
+                        <li class="list-group-item bg-dark text-white bg-dark text-white">Diseño UX/UI</li>
+                        <li class="list-group-item bg-dark text-white">Creatividad</li>
+                        <li class="list-group-item bg-dark text-white">Lógica</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link Page</a>
+                    </div>
+                </div>
+            </section>
+            <%- include('partials/footer.ejs')%>
+        </main>
+</body>
+<%- include('partials/script.ejs')%>
+
+</html>

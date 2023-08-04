@@ -1,0 +1,141 @@
+#sect-01{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    animation: animation-right 2s;
+    justify-content: center;
+    align-items: center;
+}
+#sect-01 h1{
+    font-size: 6em;
+    font-weight: bold;
+    color: rgb(236, 118, 118);
+}
+#sect-01 p{
+    color: antiquewhite;
+    font-size: 1.7em;
+    width: 45vw;
+    text-align: justify;
+}
+
+
+
+#sect-02{
+    width: 100vw;
+    height: fit-content;
+    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes animation-left {
+    0%{
+        position: relative;
+        opacity: 0;
+        left: 100em;
+        
+    }
+    100%{
+        left: 0;
+        visibility: 1;
+    }
+}
+
+@keyframes animation-right {
+    0%{
+        position: relative;
+        opacity: 0;
+        right: 100em;
+    }
+    100%{
+        right: 0;
+        visibility: 1;
+    }
+}
+
+#sect-02 .testimonials{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: inherit;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    gap: 1em;
+}
+.container__testimonials{
+    width: 45vw;
+    text-align: justify;
+    padding: 1.5em 3em;
+    height: fit-content;
+    padding-bottom: 2em;
+    text-align: center;
+    background: rgb(31, 31, 31);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation: animationHiden 4s;
+}
+
+@keyframes animationHiden {
+    0%{
+        left: -50%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+.name__testimonial{
+    color: rgb(236, 118, 118);
+    font-size: 4em;
+    font-weight: bold;
+}
+.testimonial{
+    color: gainsboro;
+    font-weight: bold;
+    font-size: 2em;
+}
+.hidden_animation{
+    left: 150%;
+    animation: hidden_animation 2s;
+}
+@keyframes hidden_animation {
+    0%{
+        left: 50%;
+    }
+    100%{
+        left: 150%;
+    }
+}
+
+@media (max-width: 800px) {
+    #sect-01 p{
+        width: 80vw;
+    }
+    #sect-01 h1{
+        font-size: 5em;
+    }
+    .container__testimonials{
+        width: 80vw;
+    }
+    .testimonial{
+        width: 100% !important;
+        font-size: 1.5em;
+        text-align: justify;
+    }
+
+    .name__testimonial{
+        font-size: 3em;
+    }
+}
+

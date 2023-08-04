@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+    <link rel="stylesheet" href="styles/contacto.css">
+    <title><%- title%></title>
+</head>
+<body>
+    <%- include('partials/header.ejs')%>
+
+    <main>
+        <form action="">
+
+            <h1>Contact</h1>
+
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Email" required>
+
+            <textarea required placeholder="Escribe aqui tu proxima idea y/o proyecto estrella...." cols="30" rows="10"></textarea>
+            
+            <button type="submit">Contact</button>
+        </form>
+    </main>
+    
+
+</body>
+<%- include('partials/script.ejs')%>
+</html>

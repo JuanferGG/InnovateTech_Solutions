@@ -1,0 +1,161 @@
+#sect-01{
+    margin-top: 3.5em;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    animation: animation-left 2s;
+    text-align: justify;
+}
+#sect-01 .left, .right{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+#sect-01 .right{
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+    height: 100%;
+    padding: 10em 0;
+    color: antiquewhite;
+}
+#sect-01 .right h1{
+    font-size: 4em;
+    text-align: left;
+}
+@keyframes animation-left {
+    0%{
+        position: relative;
+        opacity: 0;
+        left: 100em;
+        
+    }
+    100%{
+        left: 0;
+        visibility: 1;
+    }
+}
+
+#sect-02{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 0;
+    animation: animation-right 2s;
+}
+#sect-02 .left, .right{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+#sect-02 .left{
+    flex-direction: column;
+    background-color: rgb(31, 31, 31);
+    color: antiquewhite;
+    padding: 11em 0;
+}
+#sect-02 .left h1{
+    font-size: 4em;
+}
+
+@keyframes animation-right {
+    0%{
+        position: relative;
+        opacity: 0;
+        right: 100em;
+    }
+    100%{
+        right: 0;
+        visibility: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    #sect-01, #sect-02{
+        flex-direction: column;
+    }
+    #sect-02{
+        flex-direction: column-reverse;
+    }
+    #sect-01, #sect-02 .left, .right{
+        width: 100vw;
+    }
+    #sect-01 p, #sect-02 p{
+        width: 80%;
+    }
+    footer .redes{
+        display: none;
+    }
+    footer .form{
+        display: none;
+    }
+}
+
+footer{
+    width: 100vw;
+    height: 45vh;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    animation: footerAnimate 2s;
+}
+footer .img{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+footer i{
+    color: rgb(226, 136, 136);
+}
+footer i span{
+    color: antiquewhite;
+}
+footer .redes i{
+    cursor: pointer;
+    font-size: 2em;
+}
+footer .redes h2{
+    margin-bottom: 1em;
+}
+footer form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+footer form input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.4em;
+    background-color: rgb(31, 31, 31);
+    color: antiquewhite;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+footer form button{
+    background-color: rgb(226, 136, 136);
+    outline: none;
+    border: none;
+    font-size: 1.4em;
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+    transition: all .5s;
+}
+footer form button:hover{
+    background-color: antiquewhite;
+    color: rgb(31, 31, 31);
+    box-shadow: 0 0 5px antiquewhite;
+}
+@keyframes footerAnimate {
+    0%{ opacity: 0; }
+    100%{ opacity: 100; }
+}

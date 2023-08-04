@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/quienes.css">
+    <title><%- title%></title>
+</head>
+<body>
+    <%- include('partials/header.ejs')%>
+    <main>
+        <section id="sect-01">
+            <div class="left">
+                <img src="team.png" alt="">
+            </div>
+            <div class="right">
+                <h1>¿Quienes Somos?</h1>
+                <p>Somos InnovateTech Solutions, una empresa líder en soluciones
+                tecnológicas innovadoras. Nuestro equipo está compuesto por expertos apasionados por la tecnología, comprometidos en ofrecer resultados excepcionales a nuestros clientes. Nos enfocamos en impulsar el crecimiento y la transformación digital de las empresas a través de soluciones personalizadas y vanguardistas. Con una combinación de experiencia y creatividad, estamos listos para ayudarte a alcanzar tus objetivos tecnológicos y destacar en un mundo digital en constante evolución.<p>
+            </div>
+        </section>
+
+        <section id="sect-02">
+            <h1>Equipo</h1>
+            <div class="cardContainer">
+                <div class="card bg-dark text-white">
+                    <img src="img_team/img01.jpg" alt="img-perfil">
+                    <h4><b>Juan Fernando C.</b></h4>
+                    <h2>CEO</h2>
+                    <div class="redes fs-3">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white">
+                    <img src="img_team/img02.jpg" alt="img-perfil">
+                    <h4><b>Santiago Silva S.</b></h4>
+                    <h2>Manager</h2>
+                    <div class="redes fs-3">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white">
+                    <img src="img_team/img03.jpg" alt="img-perfil">
+                    <h4><b>Samuel Siva S.</b></h4>
+                    <h2>Frontend</h2>
+                    <div class="redes fs-3">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white">
+                    <img src="img_team/img04.jpg" alt="img-perfil">
+                    <h4><b>Maria Diaz C.</b></h4>
+                    <h2>Backend</h2>
+                    <div class="redes fs-3">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white">
+                    <img src="img_team/img05.jpg" alt="img-perfil">
+                    <h4><b>Sara Gomez S.</b></h4>
+                    <h2>Backend</h2>
+                    <div class="redes fs-3">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include('partials/footer.ejs')%>
+    </main>
+    
+</body>
+<%- include('partials/script.ejs')%>
+</html>

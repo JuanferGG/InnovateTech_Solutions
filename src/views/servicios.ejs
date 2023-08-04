@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/servicios.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title><%- title%></title>
+</head>
+<body>
+    <%- include('partials/header.ejs')%>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+			once: true
+		});
+	</script>
+
+    <main>
+        <section id="sect-01">
+            <h1><b>Servicios</b></h1>
+            <p>En <b>InnovateTech Solutions</b>, ofrecemos una amplia gama de servicios tecnológicos diseñados para satisfacer tus necesidades específicas
+                <br>
+                Desde el desarrollo
+                de aplicaciones web y móviles hasta el diseño de interfaces de usuario, estamos
+                preparados para enfrentar cualquier desafío tecnológico.
+            </p>
+        </section>
+        <section>
+            <div class="container">
+                <div class="evento">
+                    <div class="foto bg-dark" data-aos="fade-left">
+                        <img src="img_services/img01.png" alt="">
+                    </div>
+                    <h3 class="fecha"><b>Desarrollo de software a medida</b></h3>
+                </div>
+                <div class="evento">
+                    <div class="foto bg-dark" data-aos="fade-right">
+                        <img src="img_services/img02.png" alt="">
+                    </div>
+                    <h3 class="fecha"><b>Diseño y desarrollo web</b></h3>
+                </div>
+                <div class="evento">
+                    <div class="foto bg-dark" data-aos="fade-left">
+                        <img src="img_services/img03.png" alt="">
+                    </div>
+                    <h3 class="fecha"><b>Desarrollo de aplicaciones móviles</b></h3>
+                </div>
+                <div class="evento">
+                    <div class="foto bg-dark" data-aos="fade-right">
+                        <img src="img_services/img04.png" alt="">
+                    </div>
+                    <h3 class="fecha"><b>Consultoría tecnológica</b></h3>
+                </div>
+                <div class="evento">
+                    <div class="foto bg-dark" data-aos="fade-left">
+                        <img src="img_services/img05.png" alt="">
+                    </div>
+                    <h3 class="fecha"><b>Integración de sistemas</b></h3>
+                </div>
+                <div class="evento">
+                    <div class="foto bg-dark" data-aos="fade-right">
+                        <img src="img_services/img06.png" alt="">
+                    </div>
+                    <h3 class="fecha"><b>Diseño de interfaces de usuario (UI/UX)</b></h3>
+                </div>
+                <div class="evento">
+                    <div class="foto bg-dark" data-aos="fade-left">
+                        <img src="img_services/img07.png" alt="">
+                    </div>
+                    <h3 class="fecha"><b>Servicios de análisis de datos</b></h3>
+                </div>
+                <div class="evento">
+                    <div class="foto bg-dark" data-aos="fade-right">
+                        <img src="img_services/img08.png" alt="">
+                    </div>
+                    <h3 class="fecha"><b>Seguridad y protección de datos</b></h3>
+                </div>
+            </div>
+        
+        </section>
+        <%- include('partials/footer.ejs')%>
+    </main>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<%- include('partials/script.ejs')%>
+</html>

@@ -1,0 +1,91 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    animation: animation-right 2s;
+}
+@keyframes animation-right {
+    0%{
+        position: relative;
+        opacity: 0;
+        right: 100em;
+    }
+    100%{
+        right: 0;
+        visibility: 1;
+    }
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: .4em 3em;
+    gap: 1.3em;
+}
+main form h1 {
+    font-size: 5em;
+    font-weight: bold;
+    color: rgb(236, 118, 118);
+}
+input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.4em;
+    background-color: rgb(31, 31, 31);
+    color: antiquewhite;
+    border-radius: 5px;
+    padding-left: 10px;
+    border-bottom: 2px solid rgb(236, 118, 118);
+    transition: all .5s;
+}
+input:focus{
+    background: rgb(82, 80, 80);
+}
+input:not(:placeholder-shown) {
+    background: rgb(82, 80, 80);
+}
+textarea{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.4em;
+    background-color: rgb(31, 31, 31);
+    color: antiquewhite;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 2px solid rgb(236, 118, 118);
+    transition: all .5s;
+    height: 300px;
+}
+textarea:focus{
+    background: rgb(82, 80, 80);
+    border: 0px solid black;
+}
+textarea:not(:placeholder-shown) {
+    background: rgb(82, 80, 80);
+    border: none;
+}
+button{
+    background-color: rgb(226, 136, 136);
+    outline: none;
+    border: none;
+    font-size: 1.4em;
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+    transition: all .5s;
+}
+button:hover{
+    background-color: antiquewhite;
+    color: rgb(31, 31, 31);
+    box-shadow: 0 0 5px antiquewhite;
+}
+@media (max-width: 1000px) {
+    main form{
+        width: 80%;
+    }
+}

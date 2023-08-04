@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(212, 212, 212);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+
+    animation: animateNav 1.4s;
+}
+
+@keyframes animateNav {
+    0%{ top: -5em; }
+    100%{ top: 0; }
+}
+
+
+

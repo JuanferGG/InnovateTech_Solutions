@@ -1,0 +1,42 @@
+.cards{
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(31, 31, 31);
+    padding: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    animation: animation-right 2s;
+}
+
+@keyframes animation-left {
+    0%{
+        position: relative;
+        opacity: 0;
+        left: 100em;
+        
+    }
+    100%{
+        left: 0;
+        visibility: 1;
+    }
+}
+
+@keyframes animation-right {
+    0%{
+        position: relative;
+        opacity: 0;
+        right: 100em;
+    }
+    100%{
+        right: 0;
+        visibility: 1;
+    }
+}
+
